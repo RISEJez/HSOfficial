@@ -1,0 +1,1391 @@
+ @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{ box-sizing: border-box;}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+}
+
+h1 {font-size: 6em;
+    font-weight: bold;}
+h2 {font-size: 3.7em;}
+h3 {font-size: 2.7em;}
+p {font-size: 1.7em;}
+ul {list-style: none;}
+
+
+button {
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: 'Anton', sans-serif;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(62, 44, 118);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgba(92,70,156);
+
+}
+
+button:hover {
+    background-color: rgb(64, 47, 114);
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:rgb(64, 0, 255)}
+
+header {
+    background-color: rgb(28,28,59)
+
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: normal;
+    color: rgb(224, 217, 245);
+    font-size: 1.45em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: normal;
+    color: rgba(224, 217, 245);
+}
+
+header a:hover{
+    color: rgb(80, 61, 137);
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(28, 28, 59);
+    background-image:
+    linear-gradient(0deg, rgb(224, 217, 245),transparent 10%),linear-gradient(180deg,rgb(28, 28, 59),transparent 100%), url(/images-20240203T033027Z-001/images/backgrounds/bg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero h1{
+    color: rgb(226,218,233);
+    
+}
+
+#Info{
+    background-image: linear-gradient(180deg, rgba(1,2,144), transparent 100%);
+    background-color: rgb(1,1,73);
+    height: 100vh;
+}
+
+#Info .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#Info h2{
+    color: rgb(226, 218, 233);
+}
+#Info p{
+    color: rgb(226, 218, 233);
+}
+
+#Conoce-a-las-chicas{
+    background-color: rgb(37, 37, 39);
+    color:rgb(226, 218, 233);
+    text-align: center;
+}
+
+#Conoce-a-las-chicas .container{
+    padding: 100px 0px;
+}
+
+#Conoce-a-las-chicas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#Conoce-a-las-chicas h3{
+    color: rgb(46, 33, 67);
+}
+
+#Conoce-a-las-chicas p{
+    display: none;
+}
+
+#Conoce-a-las-chicas .carta{
+ background-position: center center;
+ background-size: cover;
+ padding: 50px;
+ margin: 20px;
+ border-radius: 20px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(to right, transparent, rgb(227, 156, 180)),
+                    url(/images-20240203T033027Z-001/images/img-phn/hiroko.jpg);
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(to right, transparent, rgb(107, 155, 184)),
+    url(/images-20240203T033027Z-001/images/img-phn/joyce.jpg);
+
+
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(to right,
+    transparent,
+    rgb(232, 130, 135))
+    ,url(/images-20240203T033027Z-001/images/img-phn/dorothy.jpg);
+}
+
+.carta:last-child{
+    background-image: linear-gradient(to right,
+    transparent,
+    rgb(170, 135, 206))
+    ,url(/images-20240203T033027Z-001/images/img-phn/marianna.jpg);
+   
+}
+
+#hiroko-bio{
+    background-color: rgb(37, 37, 39);
+    background-size: cover;
+}
+#hiroko-bio .container{
+    text-align: justify;
+    padding: 10px;
+    background-color: rgb(37, 37, 39);
+    color:rgb(226, 218, 233);
+}
+#hiroko-bio .box{
+    background-color:rgb(140, 136, 158);
+    padding: 30px;
+    margin: 10px;
+    border-radius: 20px;
+   }   
+#hiroko-bio h2{
+    margin-top: 0;
+    font-size: 4em;
+    text-align: center;
+}
+#hiroko-bio p{
+    display: block;
+    margin-bottom: 30px;
+    color: rgb(46, 42, 61);
+}
+.galeria-hiro {
+    display: none;
+}
+.light-box-1hiro {
+    display: none;
+}
+.light-box-2hiro{
+    display: none;
+}
+.light-box-3hiro{
+    display: none;
+}
+.light-box-4hiro{
+    display: none;
+}
+.light-box-5hiro{
+    display: none;
+}
+.light-box-6hiro{
+    display: none;
+}
+
+#joyce-bio {
+    background-color: rgb(37, 37, 39);
+    background-size: cover;
+}
+#joyce-bio .container{
+    text-align: justify;
+    padding: 10px;
+    background-color: rgb(37, 37, 39);
+    color:rgb(226, 218, 233);
+}
+#joyce-bio .box{
+    background-color:rgb(140, 136, 158);
+    padding: 30px;
+    margin: 10px;
+    border-radius: 20px;
+   }   
+#joyce-bio h2{
+    margin-top: 0;
+    font-size: 4em;
+    text-align: center;
+}
+#joyce-bio .imagen {display: none;}
+#joyce-bio p{
+    display: block;
+    margin-bottom: 30px;
+    color: rgb(46, 42, 61);
+}
+.galeria-joy {
+    display: none;
+}
+.light-box-1joy {
+    display: none;
+}
+.light-box-2joy{
+    display: none;
+}
+.light-box-3joy{
+    display: none;
+}
+.light-box-4joy{
+    display: none;
+}
+.light-box-5joy{
+    display: none;
+}
+.light-box-6joy{
+    display: none;
+}
+
+#dorothy-bio{
+    background-color: rgb(37, 37, 39);
+    background-size: cover;
+}
+#dorothy-bio .container{
+    text-align: justify;
+    padding: 10px;
+    background-color: rgb(37, 37, 39);
+    color:rgb(226, 218, 233);
+}
+#dorothy-bio .box{
+    background-color:rgb(140, 136, 158);
+    padding: 30px;
+    margin: 10px;
+    border-radius: 20px;
+   }   
+#dorothy-bio h2{
+    margin-top: 0;
+    font-size: 4em;
+    text-align: center;
+}
+#dorothy-bio .imagen {display: none;}
+#dorothy-bio p{
+    display: block;
+    margin-bottom: 30px;
+    color: rgb(46, 42, 61);
+}
+.galeria-dor {
+    display: none;
+}
+.light-box-1dor {
+    display: none;
+}
+.light-box-2dor{
+    display: none;
+}
+.light-box-3dor{
+    display: none;
+}
+.light-box-4dor{
+    display: none;
+}
+.light-box-5dor{
+    display: none;
+}
+.light-box-6dor{
+    display: none;
+}
+
+#mai-bio{
+    background-color: rgb(37, 37, 39);
+    background-size: cover;
+}
+#mai-bio .container{
+    text-align: justify;
+    padding: 10px;
+    color:rgb(226, 218, 233);
+}
+#mai-bio .box{
+    background-color:rgb(140, 136, 158);
+    padding: 30px;
+    margin: 10px;
+    border-radius: 20px;
+   }   
+#mai-bio h2{
+    margin-top: 0;
+    font-size: 4em;
+    text-align: center;
+}
+#mai-bio .imagen {display: none;}
+#mai-bio p{
+    display: block;
+    margin-bottom: 30px;
+    color: rgb(46, 42, 61);
+}
+.galeria-mai {
+    display: none;
+}
+.light-box-1mai {
+    display: none;
+}
+.light-box-2mai{
+    display: none;
+}
+.light-box-3mai{
+    display: none;
+}
+.light-box-4mai{
+    display: none;
+}
+.light-box-5mai{
+    display: none;
+}
+.light-box-6mai{
+    display: none;
+}
+
+
+#siguenos .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#siguenos .container a{
+    font-size: 40px;
+}
+
+footer {
+     background-color: rgb(140, 136, 158);
+}
+
+footer p{
+    margin: 0;
+    color: rgb(226, 218, 233);
+    padding: 12px;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+footer .twitter{
+    color:rgb(226, 218, 233);
+}
+footer .youtube{
+    color: rgb(226, 218, 233);
+}
+footer .instagram{
+    color: rgb(226, 218, 233);
+}
+footer .spotify{
+    color: rgb(226, 218, 233);;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+
+    }
+
+    #Info .container{
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    #Info .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #Info h2{
+        margin-top: 0;
+    }
+
+    #Info .img-container{
+        background-image: url(/images-20240203T033027Z-001/images/elements/rise-log.jpeg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+        border-radius: 10px;
+    }
+
+    
+    #Conoce-a-las-chicas .biografias{
+        display: flex;
+        justify-content: center;
+    }
+
+    #Conoce-a-las-chicas p{
+        display: block;
+        text-align: right;
+        margin-bottom: 30px;
+        margin-right: 60px;
+        color: rgb(80, 75, 103);
+    }
+
+    #Conoce-a-las-chicas h3{
+        margin-top: 20px;
+        color: rgb(46, 33, 67);
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    #Conoce-a-las-chicas .carta{
+        padding: 15px;
+        background-color: rgb(49, 49, 52);
+        box-shadow: 2px 2px 18px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(to right, transparent, rgb(227, 156, 180)),
+                        url(/images-20240203T033027Z-001/images/cropped/h-crop.jpeg);
+    
+    }
+    
+    .carta:nth-child(2){
+        background-image: linear-gradient(to right, transparent, rgb(94, 151, 186)),
+        url(/images-20240203T033027Z-001/images/cropped/joyce-crop.jpeg);
+    
+    
+    }
+    
+    .carta:nth-child(3){
+        background-image: linear-gradient(to right,
+        transparent,
+        rgb(232, 130, 135))
+        ,url(/images-20240203T033027Z-001/images/cropped/d-crop.jpeg);
+    
+    }
+    
+    .carta:last-child{
+        background-image: linear-gradient(to right,
+        transparent,
+        rgb(170, 135, 206))
+        ,url(/images-20240203T033027Z-001/images/cropped/mai-crop.jpeg);
+       
+    }
+
+            #hiroko-bio{
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+            #hiroko-bio .container{
+            text-align: justify;
+            padding: 50px;
+            background-color: rgb(37, 37, 39);
+            color:rgb(226, 218, 233);
+            background-size: cover;
+            }
+            #hiroko-bio .content{
+                display: flex;
+                justify-content: center;
+            }
+            #hiroko-bio .box{
+                background-color:rgb(140, 136, 158);
+                padding: 30px;
+                margin: 20px;
+                border-radius: 20px;
+               }   
+            #hiroko-bio h2{
+                font-size: 5em;
+                text-align: center;
+            }
+            #hiroko-bio p{
+                font-size: 1.5em;
+                display: block;
+                margin: 40px;
+                color: rgb(80, 75, 103);
+            }
+            .galeria-hiro {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                width: 100%;
+                grid-gap: 20px;
+                padding: 80px;
+                overflow: hidden;
+                background-color: rgb(226, 218, 233);
+                background-size: cover;
+            }
+            .galeria-hiro > a{
+                display: block;
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 0 0 6px rgba(0,0,0,0.5);
+            }
+            .galeria-hiro img{
+                width: 100%;
+                border-radius: 10px;
+                vertical-align: top;
+                height: 500px;
+                object-fit: cover;
+                transition: transform 0.5s;
+            }
+            .galeria-hiro a:hover img{
+                filter: blur(2px);
+                transform: rotate(10deg) scale(1.3);
+            }
+            .light-box-1hiro{
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: rgba(0,0,0,.5);
+                transition: transform .3s ease-in-out;
+                width: 100%;
+                height: 100vh;
+                z-index: 1000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: scale(0);
+            }            
+            .light-box-1hiro img{
+                width: 25vw;
+                max-height: 75vh;
+                border-radius: 10px;
+            }
+            .light-box-1hiro:target{
+                transform: scale(1);
+            }
+            .close-hiro{
+                display: block;
+                position: absolute;
+                top: 40px;
+                right: 40px;
+                background: rgb(28, 28, 59);
+                color: rgb(226, 218, 233);
+                text-decoration: none;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 50%;
+            }
+            .next-hiro{
+                display: block;
+                background: rgb(28, 28, 59);
+                color: rgb(226,218,233);
+                border-radius: 10px;
+                margin: 10px;
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                text-decoration: none;
+                text-align: center;
+            }
+            .light-box-2hiro{
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: rgba(0,0,0,.5);
+                transition: transform .3s ease-in-out;
+                width: 100%;
+                height: 100vh;
+                z-index: 1000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: scale(0);
+            }            
+            .light-box-2hiro img{
+                width: 40vw;
+                max-height: 75vh;
+                border-radius: 10px;
+            }
+            .light-box-2hiro:target{
+                transform: scale(1);
+            }
+            .light-box-3hiro{
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: rgba(0,0,0,.5);
+                transition: transform .3s ease-in-out;
+                width: 100%;
+                height: 100vh;
+                z-index: 1000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: scale(0);
+            }            
+            .light-box-3hiro img{
+                width: 25vw;
+                max-height: 75vh;
+                border-radius: 10px;
+            }
+            .light-box-3hiro:target{
+                transform: scale(1);
+            }
+            .light-box-4hiro{
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: rgba(0,0,0,.5);
+                transition: transform .3s ease-in-out;
+                width: 100%;
+                height: 100vh;
+                z-index: 1000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: scale(0);
+            }            
+            .light-box-4hiro img{
+                width: 40vw;
+                max-height: 75vh;
+                border-radius: 10px;
+            }
+            .light-box-4hiro:target{
+                transform: scale(1);
+            }
+            .light-box-5hiro{
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: rgba(0,0,0,.5);
+                transition: transform .3s ease-in-out;
+                width: 100%;
+                height: 100vh;
+                z-index: 1000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: scale(0);
+            }            
+            .light-box-5hiro img{
+                width: 25vw;
+                max-height: 75vh;
+                border-radius: 10px;
+            }
+            .light-box-5hiro:target{
+                transform: scale(1);
+            }
+            .light-box-6hiro{
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: rgba(0,0,0,.5);
+                transition: transform .3s ease-in-out;
+                width: 100%;
+                height: 100vh;
+                z-index: 1000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: scale(0);
+            }            
+            .light-box-6hiro img{
+                width: 25vw;
+                max-height: 75vh;
+                border-radius: 10px;
+            }
+            .light-box-6hiro:target{
+                transform: scale(1);
+            }
+
+                #joyce-bio{
+                    padding-top: 100px;
+                    padding-bottom: 100px;
+                }
+                #joyce-bio .container{
+                    text-align: justify;
+                    padding: 50px;
+                    background-color: rgb(37, 37, 39);
+                    color:rgb(226, 218, 233);
+                }
+                #joyce-bio .content{
+                    display: flex;
+                    justify-content: center;
+                }
+                #joyce-bio h2{
+                    font-size: 5em;
+                    text-align: center;
+                }
+                #joyce-bio p{
+                    font-size: 1.5em;
+                    display: block;
+                    margin: 40px;
+                    color: rgb(80, 75, 103);
+                }
+                .galeria-joy {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                    width: 100%;
+                    grid-gap: 20px;
+                    padding: 80px;
+                    overflow: hidden;
+                    background-color: rgb(226, 218, 233);
+                    background-size: cover;
+                }
+                .galeria-joy > a{
+                    display: block;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+                }
+                .galeria-joy img{
+                    width: 100%;
+                    border-radius: 10px;
+                    vertical-align: top;
+                    height: 500px;
+                    object-fit: cover;
+                    transition: transform 0.5s;
+                }
+                .galeria-joy a:hover img{
+                    filter: blur(2px);
+                    transform: rotate(10deg) scale(1.3);
+                }
+                .light-box-1joy{
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0,0,0,.5);
+                    transition: transform .3s ease-in-out;
+                    width: 100%;
+                    height: 100vh;
+                    z-index: 1000;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transform: scale(0);
+                }            
+                .light-box-1joy img{
+                    width: 25vw;
+                    max-height: 75vh;
+                    border-radius: 10px;
+                }
+                .light-box-1joy:target{
+                    transform: scale(1);
+                }
+                .close-joy{
+                    display: block;
+                    position: absolute;
+                    top: 40px;
+                    right: 40px;
+                    background: rgb(28, 28, 59);
+                    color: rgb(226, 218, 233);
+                    text-decoration: none;
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    border-radius: 50%;
+                }
+                .next-joy{
+                    display: block;
+                    background: rgb(28, 28, 59);
+                    color: rgb(226,218,233);
+                    border-radius: 10px;
+                    margin: 10px;
+                    height: 40px;
+                    width: 40px;
+                    line-height: 40px;
+                    text-decoration: none;
+                    text-align: center;
+                }
+                .light-box-2joy{
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0,0,0,.5);
+                    transition: transform .3s ease-in-out;
+                    width: 100%;
+                    height: 100vh;
+                    z-index: 1000;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transform: scale(0);
+                }            
+                .light-box-2joy img{
+                    width: 25vw;
+                    max-height: 75vh;
+                    border-radius: 10px;
+                }
+                .light-box-2joy:target{
+                    transform: scale(1);
+                }
+                .light-box-3joy{
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0,0,0,.5);
+                    transition: transform .3s ease-in-out;
+                    width: 100%;
+                    height: 100vh;
+                    z-index: 1000;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transform: scale(0);
+                }            
+                .light-box-3joy img{
+                    width: 25vw;
+                    max-height: 75vh;
+                    border-radius: 10px;
+                }
+                .light-box-3joy:target{
+                    transform: scale(1);
+                }
+                .light-box-4joy{
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0,0,0,.5);
+                    transition: transform .3s ease-in-out;
+                    width: 100%;
+                    height: 100vh;
+                    z-index: 1000;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transform: scale(0);
+                }            
+                .light-box-4joy img{
+                    width: 25vw;
+                    max-height: 75vh;
+                    border-radius: 10px;
+                }
+                .light-box-4joy:target{
+                    transform: scale(1);
+                }
+                .light-box-5joy{
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0,0,0,.5);
+                    transition: transform .3s ease-in-out;
+                    width: 100%;
+                    height: 100vh;
+                    z-index: 1000;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transform: scale(0);
+                }            
+                .light-box-5joy img{
+                    width: 25vw;
+                    max-height: 75vh;
+                    border-radius: 10px;
+                }
+                .light-box-5joy:target{
+                    transform: scale(1);
+                }
+                .light-box-6joy{
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0,0,0,.5);
+                    transition: transform .3s ease-in-out;
+                    width: 100%;
+                    height: 100vh;
+                    z-index: 1000;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transform: scale(0);
+                }            
+                .light-box-6joy img{
+                    width: 25vw;
+                    max-height: 75vh;
+                    border-radius: 10px;
+                }
+                .light-box-6joy:target{
+                    transform: scale(1);
+                }
+
+                    #dorothy-bio{
+                        padding-top: 100px;
+                        padding-bottom: 100px;
+                    }
+                    #dorothy-bio .container{
+                        text-align: justify;
+                        padding: 50px;
+                        background-color: rgb(37, 37, 39);
+                        color:rgb(226, 218, 233);
+                    }
+                    #dorothy-bio .content{
+                        display: flex;
+                        justify-content: center;
+                    }
+                    #dorothy-bio h2{
+                        font-size: 5em;
+                        text-align: center;
+                    }
+                    #dorothy-bio p{
+                        font-size: 1.5em;
+                        display: block;
+                        margin: 40px;
+                        color: rgb(80, 75, 103);
+                    }
+                    .galeria-dor {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                        width: 100%;
+                        grid-gap: 20px;
+                        padding: 80px;
+                        overflow: hidden;
+                        background-color: rgb(226, 218, 233);
+                        background-size: cover;
+                    }
+                    .galeria-dor > a{
+                        display: block;
+                        position: relative;
+                        overflow: hidden;
+                        border-radius: 10px;
+                        box-shadow: 0 0 6px rgba(0,0,0,0.5);
+                    }
+                    .galeria-dor img{
+                        width: 100%;
+                        border-radius: 10px;
+                        vertical-align: top;
+                        height: 500px;
+                        object-fit: cover;
+                        transition: transform 0.5s;
+                    }
+                    .galeria-dor a:hover img{
+                        filter: blur(2px);
+                        transform: rotate(10deg) scale(1.3);
+                    }
+                    .light-box-1dor{
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        background: rgba(0,0,0,.5);
+                        transition: transform .3s ease-in-out;
+                        width: 100%;
+                        height: 100vh;
+                        z-index: 1000;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transform: scale(0);
+                    }            
+                    .light-box-1dor img{
+                        width: 25vw;
+                        max-height: 75vh;
+                        border-radius: 10px;
+                    }
+                    .light-box-1dor:target{
+                        transform: scale(1);
+                    }
+                    .close-dor{
+                        display: block;
+                        position: absolute;
+                        top: 40px;
+                        right: 40px;
+                        background: rgb(28, 28, 59);
+                        color: rgb(226, 218, 233);
+                        text-decoration: none;
+                        width: 40px;
+                        height: 40px;
+                        text-align: center;
+                        line-height: 40px;
+                        border-radius: 50%;
+                    }
+                    .next-dor{
+                        display: block;
+                        background: rgb(28, 28, 59);
+                        color: rgb(226,218,233);
+                        border-radius: 10px;
+                        margin: 10px;
+                        height: 40px;
+                        width: 40px;
+                        line-height: 40px;
+                        text-decoration: none;
+                        text-align: center;
+                    }
+                    .light-box-2dor{
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        background: rgba(0,0,0,.5);
+                        transition: transform .3s ease-in-out;
+                        width: 100%;
+                        height: 100vh;
+                        z-index: 1000;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transform: scale(0);
+                    }            
+                    .light-box-2dor img{
+                        width: 25vw;
+                        max-height: 75vh;
+                        border-radius: 10px;
+                    }
+                    .light-box-2dor:target{
+                        transform: scale(1);
+                    }
+                    .light-box-3dor{
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        background: rgba(0,0,0,.5);
+                        transition: transform .3s ease-in-out;
+                        width: 100%;
+                        height: 100vh;
+                        z-index: 1000;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transform: scale(0);
+                    }            
+                    .light-box-3dor img{
+                        width: 25vw;
+                        max-height: 75vh;
+                        border-radius: 10px;
+                    }
+                    .light-box-3dor:target{
+                        transform: scale(1);
+                    }
+                    .light-box-4dor{
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        background: rgba(0,0,0,.5);
+                        transition: transform .3s ease-in-out;
+                        width: 100%;
+                        height: 100vh;
+                        z-index: 1000;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transform: scale(0);
+                    }            
+                    .light-box-4dor img{
+                        width: 25vw;
+                        max-height: 75vh;
+                        border-radius: 10px;
+                    }
+                    .light-box-4dor:target{
+                        transform: scale(1);
+                    }
+                    .light-box-5dor{
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        background: rgba(0,0,0,.5);
+                        transition: transform .3s ease-in-out;
+                        width: 100%;
+                        height: 100vh;
+                        z-index: 1000;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transform: scale(0);
+                    }            
+                    .light-box-5dor img{
+                        width: 25vw;
+                        max-height: 75vh;
+                        border-radius: 10px;
+                    }
+                    .light-box-5dor:target{
+                        transform: scale(1);
+                    }
+                    .light-box-6dor{
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        background: rgba(0,0,0,.5);
+                        transition: transform .3s ease-in-out;
+                        width: 100%;
+                        height: 100vh;
+                        z-index: 1000;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transform: scale(0);
+                    }            
+                    .light-box-6dor img{
+                        width: 25vw;
+                        max-height: 75vh;
+                        border-radius: 10px;
+                    }
+                    .light-box-6dor:target{
+                        transform: scale(1);
+                    }
+
+                        #mai-bio{
+                            padding-top: 100px;
+                            padding-bottom: 100px;
+                        }
+                        #mai-bio .container{
+                            text-align: justify;
+                            padding: 50px;
+                        
+                            color:rgb(226, 218, 233);
+                        }#mai-bio .content{
+                            display: flex;
+                            justify-content: center;
+                        }
+                        #mai-bio h2{
+                            font-size: 5em;
+                            text-align: center;
+                        }
+                        #mai-bio .imagen {
+                            height: 400px;
+                            width: 300px;
+                            max-width: 50%;
+                            border-radius: 10px;
+                            display: flex;
+                            justify-content: right;
+                            
+                        }
+                        #mai-bio p{
+                            font-size: 1.5em;
+                            display: block;
+                            margin: 40px;
+                            color: rgb(80, 75, 103);
+                        }
+                        .galeria-mai {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                            width: 100%;
+                            grid-gap: 20px;
+                            padding: 80px;
+                            overflow: hidden;
+                            background-color: rgb(226, 218, 233);
+                        }
+                        .galeria-mai > a{
+                            display: block;
+                            position: relative;
+                            overflow: hidden;
+                            border-radius: 10px;
+                            box-shadow: 0 0 6px rgba(0,0,0,0.5);
+                        }
+                        .galeria-mai img{
+                            width: 100%;
+                            border-radius: 10px;
+                            vertical-align: top;
+                            height: 500px;
+                            object-fit: cover;
+                            transition: transform 0.5s;
+                        }
+                        .galeria-mai a:hover img{
+                            filter: blur(2px);
+                            transform: rotate(10deg) scale(1.3);
+                        }
+                        .light-box-1mai{
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            background: rgba(0,0,0,.5);
+                            transition: transform .3s ease-in-out;
+                            width: 100%;
+                            height: 100vh;
+                            z-index: 1000;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transform: scale(0);
+                        }            
+                        .light-box-1mai img{
+                            width: 25vw;
+                            max-height: 75vh;
+                            border-radius: 10px;
+                        }
+                        .light-box-1mai:target{
+                            transform: scale(1);
+                        }
+                        .close-mai{
+                            display: block;
+                            position: absolute;
+                            top: 40px;
+                            right: 40px;
+                            background: rgb(28, 28, 59);
+                            color: rgb(226, 218, 233);
+                            text-decoration: none;
+                            width: 40px;
+                            height: 40px;
+                            text-align: center;
+                            line-height: 40px;
+                            border-radius: 50%;
+                        }
+                        .next-mai{
+                            display: block;
+                            background: rgb(28, 28, 59);
+                            color: rgb(226,218,233);
+                            border-radius: 10px;
+                            margin: 10px;
+                            height: 40px;
+                            width: 40px;
+                            line-height: 40px;
+                            text-decoration: none;
+                            text-align: center;
+                        }
+                        .light-box-2mai{
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            background: rgba(0,0,0,.5);
+                            transition: transform .3s ease-in-out;
+                            width: 100%;
+                            height: 100vh;
+                            z-index: 1000;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transform: scale(0);
+                        }            
+                        .light-box-2mai img{
+                            width: 25vw;
+                            max-height: 75vh;
+                            border-radius: 10px;
+                        }
+                        .light-box-2mai:target{
+                            transform: scale(1);
+                        }
+                        .light-box-3mai{
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            background: rgba(0,0,0,.5);
+                            transition: transform .3s ease-in-out;
+                            width: 100%;
+                            height: 100vh;
+                            z-index: 1000;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transform: scale(0);
+                        }            
+                        .light-box-3mai img{
+                            width: 25vw;
+                            max-height: 75vh;
+                            border-radius: 10px;
+                        }
+                        .light-box-3mai:target{
+                            transform: scale(1);
+                        }
+                        .light-box-4mai{
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            background: rgba(0,0,0,.5);
+                            transition: transform .3s ease-in-out;
+                            width: 100%;
+                            height: 100vh;
+                            z-index: 1000;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transform: scale(0);
+                        }            
+                        .light-box-4mai img{
+                            width: 25vw;
+                            max-height: 75vh;
+                            border-radius: 10px;
+                        }
+                        .light-box-4mai:target{
+                            transform: scale(1);
+                        }
+                        .light-box-5mai{
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            background: rgba(0,0,0,.5);
+                            transition: transform .3s ease-in-out;
+                            width: 100%;
+                            height: 100vh;
+                            z-index: 1000;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transform: scale(0);
+                        }            
+                        .light-box-5mai img{
+                            width: 25vw;
+                            max-height: 75vh;
+                            border-radius: 10px;
+                        }
+                        .light-box-5mai:target{
+                            transform: scale(1);
+                        }
+                        .light-box-6mai{
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            background: rgba(0,0,0,.5);
+                            transition: transform .3s ease-in-out;
+                            width: 100%;
+                            height: 100vh;
+                            z-index: 1000;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transform: scale(0);
+                        }            
+                        .light-box-6mai img{
+                            width: 25vw;
+                            max-height: 75vh;
+                            border-radius: 10px;
+                        }
+                        .light-box-6mai:target{
+                            transform: scale(1);
+                        }
+            
+
+
+                #siguenos .container{
+                    text-align: initial;
+                }
+
+                #siguenos ul{
+                    margin-left: 100px;
+                }
+
+                footer .container {
+                    justify-content: flex-end;
+                }
+}
