@@ -110,6 +110,7 @@ header a:hover{
 #Info .container{
     text-align: center;
     padding: 100px 12px;
+    padding-bottom: 200px;
 }
 #Info h2{
     color: rgb(226, 218, 233);
