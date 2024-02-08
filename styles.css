@@ -1,7 +1,6 @@
  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 *{ box-sizing: border-box;}
 
-
 html{
     scroll-behavior: smooth;
 }
@@ -109,9 +108,8 @@ header a:hover{
 }
 
 #Info .container{
-    text-align: center center;
-    padding: 100px 12px;
-    padding-bottom: 200px;
+    text-align: center;
+    padding: 200px 12px;
 }
 #Info h2{
     color: rgb(226, 218, 233);
